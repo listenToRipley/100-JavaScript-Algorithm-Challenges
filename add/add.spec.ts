@@ -11,7 +11,7 @@ describe(add.name, () => {
   it('ADD test 2', () => {
     //act
     const result = add(3,2);
-    //assert
+    //assert result to be
     expect(result).toBe(5);
   });
 
