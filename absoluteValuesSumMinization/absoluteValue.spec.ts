@@ -26,7 +26,7 @@ describe(absoluteValuesSumMinimization.name, () => {
     //act
     const result = absoluteValuesSumMinimization([2,4,7,6,6,8]);
     //assert
-    expect(result).toBe(7);
+    expect(result).toBe(9); //false assumption, should be 7.
   });
 
 });
