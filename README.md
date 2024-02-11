@@ -9,4 +9,4 @@
 
 ## Testing
 
-`npm run testFile folder/file.spec.ts`
+`npm run testFile folder/file.spec.ts` to run test.
