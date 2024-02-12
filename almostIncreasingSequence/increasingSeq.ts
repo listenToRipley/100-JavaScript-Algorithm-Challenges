@@ -8,14 +8,25 @@ export const increasingSeq = (seq: number[]):boolean => {
 
   for (let i = 0; i < unsortedSeq.length - 1; i++) {
     if (unsortedSeq[i] != sortedSeq[i] && removed == 0) {
-      delete unsortedSeq[i] 
-      delete sortedSeq[i]
+      delete unsortedSeq[i];
+      delete sortedSeq[i];
       removed += 1;
     } else {
       return increasing = false;
     }
     
   }
+
+  //option 2
+  for (let j = 0; j < unsortedSeq.length - 1; j++) {
+    if ( unsortedSeq[j + 1] > unsortedSeq[j] && removed == 0) {
+      unsortedSeq.splice(j + 1, 1);//instead of delete 
+      removed += 1;
+    } else {
+      return increasing = false;
+    }
+    
+  };
 
   return increasing;
 }
