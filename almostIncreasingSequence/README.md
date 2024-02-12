@@ -4,8 +4,9 @@
 Given a sequence of integers as an array, determine whether it is possible to obtain a strictly increasing sequence by removing no more than one element from the array.
 
 **Explain**
+Two options:
 
-One way to do this:
+Option 1
 1. Make a deep copy of the array.
 2. Sort the copy.
 3. Compare the values of the array. 
@@ -13,7 +14,9 @@ One way to do this:
 5. If you come to more values that that would have to be removed, then return false.
 6. If you go through the whole sorted array without issue, then the result is true.
 
-Second way:
+ - alternate you make the counter always increasing, and at the end if it is more than 1 then return false. But seems redundant if we already are going to be evaluating for removals.
+
+Option 2:
 1. Loop through the array.
 2. Compare the current value with the next value.
 3. If the next value is greater than the current value, go the next.
@@ -26,7 +29,7 @@ Second way:
 
 Both options will need a way to count if you have removed no more than one value from the array.
 
-The complexity is greater with the first option, but it is more robust and will allow faster in some cases.
+The complexity is greater with the first option, but it is more robust and will allow faster in some cases. The time complexity is about the same for both.
 
 
 **Example**
