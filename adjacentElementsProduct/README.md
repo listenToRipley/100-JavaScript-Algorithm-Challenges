@@ -4,6 +4,12 @@
 
 Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
 
+1. Loop through the array. 
+2. Multiple the current number by the next number in the array.
+3. If the value is larger than the last check, then that is your new largest set.
+4. If it is not, then go to the next set. 
+5. Once you have gone through the whole set, return the results.
+
 **Example**
 
 For inputArray = [3, 6, -2, -5, 7, 3], the output should be

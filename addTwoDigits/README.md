@@ -29,3 +29,4 @@ addTwoDigits(n) = 11.
 
     The sum of the first and second digits of the input number.
 
+Changes this really on one of the test, figures it might be harder with a large number set.
