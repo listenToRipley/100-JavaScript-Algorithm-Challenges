@@ -3,7 +3,6 @@ export const longestStrings = (list: string[]): string[] => {
   let result = [];
 
   list.forEach((str)=> {
-    console.log(str)
     if (str.length  == longest) {
       result.push(str);
     } else if (str.length > longest) {
