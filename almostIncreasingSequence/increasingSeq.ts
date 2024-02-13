@@ -17,4 +17,4 @@ export const increasingSeq = (seq: number[]):boolean => {
   return increasing;
 }
 
-console.log(increasingSeq([1,3,2]))
+//console.log(increasingSeq([1,3,2]))
