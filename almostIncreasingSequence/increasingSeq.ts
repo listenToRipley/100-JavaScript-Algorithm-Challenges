@@ -13,9 +13,8 @@ export const increasingSeq = (seq: number[]):boolean => {
       removed += 1;
     } else {
       return increasing = false;
-    }
-    
-  }
+    };
+  };
 
   //option 2
   for (let j = 0; j < unsortedSeq.length - 1; j++) {
@@ -24,8 +23,7 @@ export const increasingSeq = (seq: number[]):boolean => {
       removed += 1;
     } else {
       return increasing = false;
-    }
-    
+    };  
   };
 
   return increasing;
