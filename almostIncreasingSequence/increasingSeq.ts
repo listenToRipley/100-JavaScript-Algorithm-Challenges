@@ -10,21 +10,25 @@ export const increasingSeq = (seq: number[]):boolean => {
     if (unsortedSeq[i] != sortedSeq[i] && removed == 0) {
       delete unsortedSeq[i];
       delete sortedSeq[i];
+      console.log(`unsorted now: ${unsortedSeq}\n sorted now: ${sortedSeq}`);
       removed += 1;
+      console.log(`removed? ${removed}`);
     } else {
       return increasing = false;
     };
   };
 
   //option 2
-  for (let j = 0; j < unsortedSeq.length - 1; j++) {
-    if ( unsortedSeq[j + 1] > unsortedSeq[j] && removed == 0) {
-      unsortedSeq.splice(j + 1, 1);//instead of delete 
-      removed += 1;
-    } else {
-      return increasing = false;
-    };  
-  };
+  // for (let j = 0; j < unsortedSeq.length - 1; j++) {
+  //   if ( unsortedSeq[j + 1] > unsortedSeq[j] && removed == 0) {
+  //     unsortedSeq.splice(j + 1, 1);//instead of delete 
+  //     console.log(`unsorted now: ${unsortedSeq}`);
+  //     removed += 1;
+  //     console.log(`removed? ${removed}`);
+  //   } else {
+  //     return increasing = false;
+  //   };  
+  // };
 
   return increasing;
 }
