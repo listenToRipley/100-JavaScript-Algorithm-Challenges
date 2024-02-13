@@ -31,6 +31,8 @@ Both options will need a way to count if you have removed no more than one value
 
 The complexity is greater with the first option, but it is more robust and will allow faster in some cases. The time complexity is about the same for both.
 
+*Summary*
+Decided that option 1 is poor for a number of reason, mostly because we are trying to change the list while we are currently looping through it and it can cause issues.
 
 **Example**
 
