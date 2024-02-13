@@ -5,7 +5,7 @@ export const alphabetShift = (word:string): string => {
   
   wordArray.forEach((letter: string) => {
     let index = alphabet.indexOf(letter)
-    index === alphabet.length ? newWordArray.push(alphabet[0]) : newWordArray.push(alphabet[index + 1]);
+    index === alphabet.length ? newWordArray.push('a') : newWordArray.push(alphabet[index + 1]);
   })
 
   return newWordArray.join('');
