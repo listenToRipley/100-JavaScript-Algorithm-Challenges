@@ -22,9 +22,8 @@ export const increasingSeq = (seq: number[]):boolean => {
   for (let j = 0; j < unsortedSeq.length - 1; j++) {
     if ( unsortedSeq[j + 1] > unsortedSeq[j] && removed == 0) {
       unsortedSeq.splice(j + 1, 1);//instead of delete 
-      console.log(`unsorted now: ${unsortedSeq}`);
       removed += 1;
-      console.log(`removed? ${removed}`);
+      console.log(`unsorted now: ${unsortedSeq} \nremoved? ${removed}`);
     } else {
       return increasing = false;
     };  

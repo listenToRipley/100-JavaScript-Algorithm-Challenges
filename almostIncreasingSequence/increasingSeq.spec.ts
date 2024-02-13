@@ -14,5 +14,13 @@ describe(increasingSeq.name, () => {
     //assert
     expect(result).toBe(false);
   });
+  
+  it('always increasing, except 1? Test 3', () => {
+    //function call
+    const result = increasingSeq([1,3,2]);
+    //assert
+    expect(result).toBe(true);
+  });
+  
 
 });
