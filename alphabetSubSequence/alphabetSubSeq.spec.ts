@@ -22,10 +22,17 @@ describe(alphabetSubSeq.name, () => {
     expect(result).toBe(true);
   });
 
-  it('test 2 for alphabet seq', () => {
+  it('test 4 for alphabet seq', () => {
     //function call
     const result = alphabetSubSeq('bxz');
     //asset
     expect(result).toBe(true);
+  });
+
+  it('test 5 for alphabet seq', () => {
+    //function call
+    const result = alphabetSubSeq('zab');
+    //asset
+    expect(result).toBe(false);
   });
 });

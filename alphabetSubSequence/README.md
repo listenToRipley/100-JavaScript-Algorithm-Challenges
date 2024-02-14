@@ -9,7 +9,7 @@ The each letter provide, should have a higher index then the letter before.
 1. Create an alphabet reference.
 2. Convert the letters to an array.
 3. Go through the array 
-4. If the value of the next letter came before the last letter, return false
+4. If the value of the next letter came before the last letter or is the same letter, return false
 5. Else if the next letter comes after the previous letter, then return true unless the first condition is met.
 6. If you each the end and all letter are in order, return true.
 
