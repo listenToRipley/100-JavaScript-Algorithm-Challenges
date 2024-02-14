@@ -6,11 +6,10 @@ export const alphabetSubSeq = (seq: string): boolean => {
 
   for (let i = 1; i < seqArray.length - 1; i++) { //start at the second item since we have already set the next value.
     let letterIdx = alphabet.indexOf(seqArray[i]);
-    console.log(`indexes: ${latestIdx} < ${letterIdx}`)
-    if (latestIdx > letterIdx) {
-      return inOrder = false;
+    if (latestIdx < letterIdx) {
+      latestIdx = letterIdx;
     } else {
-      latestIdx = alphabet.indexOf(seqArray[i])
+      return inOrder = false;
     }
 
   }
