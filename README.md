@@ -13,6 +13,8 @@
 - [Almost Increasing Sequence](./almostIncreasingSequence/README.md)
 - [Alphabet Shift](./alphabeticShift/README.md)
 - [Alphabet Subsequence](./alphabetSubSequence/README.md)
+- [Alternating Sums](./alternatingSums/README.md)
+
 
 ## Testing
 
