@@ -6,6 +6,13 @@ Several people are standing in a row and need to be divided into two teams. The 
 
 You are given an array of positive integers - the weights of the people. Return an array of two integers, where the first element is the total weight of team 1, and the second element is the total weight of team 2 after the division is complete.
 
+**Explain**
+
+1. Loop  through the array
+2. Determine if the value is odd or even.
+3. Depending on if the value is odd or even, add it to a holding values based on the resulting.
+4. Return a new array with those held values.
+
 **Example**
 
 For a = [50, 60, 60, 45, 70], the output should be
