@@ -9,8 +9,8 @@ You are given an array of positive integers - the weights of the people. Return 
 **Explain**
 
 1. Loop  through the array
-2. Determine if the value is odd or even.
-3. Depending on if the value is odd or even, add it to a holding values based on the resulting.
+2. Determine if the index is odd or even.
+3. Depending on if the index is odd or even, add it to a holding values based on the resulting.
 4. Return a new array with those held values.
 
 **Example**
