@@ -16,6 +16,8 @@ The location of the value does not matter.
 
 If there are any non matching values, then return false.
 
+Personally note, if I was passing this, I would make this either an array or object to pass in.
+
 **Example**
 
 - For yourLeft = 10, yourRight = 15, friendsLeft = 15 and friendsRight = 10, the output should be 
@@ -55,16 +57,4 @@ A non-negative integer representing the heaviest weight your friend can lift wit
 
 *Guaranteed constraints:*
 
-0 ≤ friendsLeft ≤ 20.
-
-- **[input] integer friendsRight**
-
-A non-negative integer representing the heaviest weight your friend can lift with his or her right arm.
-
-*Guaranteed constraints:*
-
-0 ≤ friendsRight ≤ 20.
-
-- **[output] boolean**
-
-true if you and your friend are equally strong, false otherwise.
+0 ≤ friendsLeft ≤

@@ -1,11 +1,12 @@
 export const equallyStrong = (yourLeft: number, yourRight: number, friendsLeft: number, friendsRight: number):boolean => {
   let equal:boolean = false;
-  const yourWeakest = yourLeft <= yourRight ? yourLeft : yourRight;
-  const yourStrongest = yourLeft >= yourRight ? yourLeft : yourRight;
-  const friendsWeakest = friendsLeft <= friendsRight ? friendsLeft : friendsRight;
-  const friendsStrongest = friendsLeft >= friendsRight ? friendsLeft : friendsRight;
+  let yourHands: number[] = [yourLeft, yourRight];
+  let friendsHands: number[] = [friendsLeft, friendsRight];
 
-  if (yourWeakest === friendsWeakest && yourStrongest === friendsStrongest) {
+  yourHands.sort((a: number,b: number) => a-b);
+  friendsHands.sort((a:number, b:number) => a-b);
+
+  if (yourHands[0] === friendsHands[0] && yourHands[1] === friendsHands[1]) {
     return equal = true;
   }
 
