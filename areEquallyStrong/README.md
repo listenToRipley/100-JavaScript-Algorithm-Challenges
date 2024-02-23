@@ -57,4 +57,16 @@ A non-negative integer representing the heaviest weight your friend can lift wit
 
 *Guaranteed constraints:*
 
-0 ≤ friendsLeft ≤
+0 ≤ friendsLeft ≤ 20.
+
+- **[input] integer friendsRight**
+
+A non-negative integer representing the heaviest weight your friend can lift with his or her right arm.
+
+*Guaranteed constraints:*
+
+0 ≤ friendsRight ≤ 20.
+
+- **[output] boolean**
+
+true if you and your friend are equally strong, false otherwise.
