@@ -6,6 +6,15 @@
 
 - [Add](./add/README.md)
 - [Absolute Values Sum Minimization](./absoluteValuesSumMinization/README.md)
+- [Add Border](./addBorder/README.md)
+- [AddTwoDigits](./addTwoDigits/README.md)
+- [Adjacent Elements Product](./adjacentElementsProduct/README.md)
+- [All Longest Strings](./allLongestStrings/README.md)
+- [Almost Increasing Sequence](./almostIncreasingSequence/README.md)
+- [Alphabet Shift](./alphabeticShift/README.md)
+- [Alphabet Subsequence](./alphabetSubSequence/README.md)
+- [Alternating Sums](./alternatingSums/README.md)
+
 
 ## Testing
 

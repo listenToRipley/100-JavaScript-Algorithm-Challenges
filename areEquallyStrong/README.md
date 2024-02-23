@@ -8,12 +8,24 @@ Call two people equally strong if their strongest arms are equally strong (the s
 
 Given your and your friend's arms' lifting capabilities find out if you two are equally strong.
 
+**Explain**
+
+If there are matching values from your friend or your hands, return true.
+
+The location of the value does not matter.
+
+If there are any non matching values, then return false.
+
+Personally note, if I was passing this, I would make this either an array or object to pass in.
+
 **Example**
 
-- For yourLeft = 10, yourRight = 15, friendsLeft = 15 and friendsRight = 10, the output should be
+- For yourLeft = 10, yourRight = 15, friendsLeft = 15 and friendsRight = 10, the output should be 
 areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true;
+
 - For yourLeft = 15, yourRight = 10, friendsLeft = 15 and friendsRight = 10, the output should be
 areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = true;
+
 - For yourLeft = 15, yourRight = 10, friendsLeft = 15 and friendsRight = 9, the output should be
 areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) = false.
 
