@@ -6,7 +6,5 @@
 
 - [Add](./add/README.md)
 - [Absolute Values Sum Minimization](./absoluteValuesSumMinization/README.md)
-
-## Testing
-
-`npm run testFile folder/file.spec.ts` to run test.
+- [Add Border](./addBorder/README.md)
+- [AddTwoDigits](./addTwoD
