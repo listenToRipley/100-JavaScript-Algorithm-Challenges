@@ -7,7 +7,7 @@ export const arrayChange = (array: number[]): number => {
     const nextValue = copyArray[i+1];
     
     if (value >= nextValue) {
-      const difference = (value + 1  - nextValue);
+      const difference = value + 1  - (nextValue);
       copyArray[i + 1] = difference + 1;
       shifts+= difference;
     }
