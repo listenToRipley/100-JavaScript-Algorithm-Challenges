@@ -5,10 +5,9 @@ export const arrayChange = (array: number[]): number => {
   for (let i = 0; i < copyArray.length; i++) {
     const value = copyArray[i];
     const nextValue = copyArray[i+1];
-    
     if (value >= nextValue) {
-      const difference = value + 1  - (nextValue);
-      copyArray[i + 1] = difference + 1;
+      const difference = Math.abs(value + 1  - nextValue);
+      copyArray[i + 1] = nextValue + difference;
       shifts+= difference;
     }
   };
@@ -16,4 +15,4 @@ export const arrayChange = (array: number[]): number => {
   return shifts ;
 };
 
-console.log(arrayChange([1,1,1]))
+//console.log(arrayChange([1,1,1]))
