@@ -1,31 +1,25 @@
 export const areSimilar = (group1: number[], group2: number[]):boolean => {
-  let similar: boolean = false;
-  //short circuit if one is longer than the other.
-  if (group1.length !== group2.length) {
-    return similar;
-  }
-  //track how many times we have to move a number.
-  let swapCount: number = 0;
-  let newGroup2: number[] = []
-  
-  group1.forEach((value: number, idx: number ) => {
-    if (value != group2[idx]) {
-      let findValue: number = group2.indexOf(value);
-      if (findValue == -1) {
-        return similar = false;
-      } else {
-        newGroup2.push(value);
-        swapCount ++;
-      }
-    } else {
-      newGroup2.push(group2[idx])
-    }
-  });
-  if (group1.toString() === newGroup2.toString() && swapCount <= 1) {
-    return similar = true;
-  } 
+  const newGroup1: number[] | string = [];
+  let newGroup2: number[] | string = [];
 
-  return similar;
+  if (group1.toString() === group2.toString()) {
+    return true;
+  };
+
+  group1.forEach((value: number, idx:number) => {
+    if(group1[idx] !== group2[idx]) {//if we have to change anything
+      newGroup1.push(group1[idx]);
+      newGroup2.push(group2[idx]);
+    };
+  });
+
+  newGroup2 = newGroup2.reverse();//since we would have added the value from group2 after group1. In order to match, group2 should be reversed.
+
+  if (newGroup1.length === 2 && (newGroup1.toString() === newGroup2.toString())) {//first value, means that there should only be two items shifted. Second, is the values that were moved are the same values.
+    return true;
+  }
+
+  return false;
 };
 
 // console.log(areSimilar([1,2,3], [1,2,3]))//true
