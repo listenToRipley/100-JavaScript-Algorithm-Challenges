@@ -8,6 +8,13 @@ Given two arrays a and b, check whether they are similar.
 
 **Explain**
 
+There are a couple ways you could do this. 
+1. Sum the value of the array and compare it. That would have possible flaw though.
+2. Order the arrays and compare that each value matches.
+3. Order the array, convert it to a string and then see if they match exactly.
+
+The item that has the fast comparison is option 3.
+
 **Example**
 
 - For a = [1, 2, 3] and b = [1, 2, 3], the output should be
