@@ -14,6 +14,8 @@
 - [Alphabet Shift](./alphabeticShift/README.md)
 - [Alphabet Subsequence](./alphabetSubSequence/README.md)
 - [Alternating Sums](./alternatingSums/README.md)
+- [Are Equally Strong](./areEquallyStrong/README.md)
+- []()
 
 
 ## Testing
