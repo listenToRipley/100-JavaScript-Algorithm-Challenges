@@ -1,4 +1,8 @@
 export const areSimilar = (group1: number[], group2: number[]):boolean => {
+  if (group1.length !== group2.length) {
+    return false;
+  }
+  
   let string1: string = [...group1].sort((a:number,b:number)=> a-b).join('');
   let string2: string = [...group2].sort((a:number,b:number)=> a-b).join('');
 
