@@ -6,6 +6,8 @@ Two arrays are called similar if one can be obtained from another by swapping at
 
 Given two arrays a and b, check whether they are similar.
 
+**Explain**
+
 **Example**
 
 - For a = [1, 2, 3] and b = [1, 2, 3], the output should be
