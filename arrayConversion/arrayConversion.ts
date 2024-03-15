@@ -1,6 +1,6 @@
 export const arrayConversion = (sumArr: number[]):number => {
   let result: number = 0;
-  let iterationCount = 0;
+  let iterationCount: number = 0;
 
   let currentArray: number[][]| number[] = loopPairs(sumArr)
 
@@ -8,12 +8,12 @@ export const arrayConversion = (sumArr: number[]):number => {
 
     if (iterationCount % 2 === 0) {
       iterationCount++;
-      AddLoop(currentArray);
+      arrayConversion(AddLoop(currentArray))
     } 
 
     if (iterationCount % 2 !== 0) {
       iterationCount++;
-      mutlipleLoop(currentArray)
+      arrayConversion(mutlipleLoop(currentArray));
     }
   } while (currentArray.length !== 1) // break condition
 
@@ -43,3 +43,5 @@ const AddLoop = (addArr: number[][]): number[] => {
   }
   return result;
 };
+
+console.log(arrayConversion([1,2,3,4,5,6,7,8]))
