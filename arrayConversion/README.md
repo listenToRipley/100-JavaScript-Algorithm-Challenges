@@ -8,6 +8,15 @@ Given an array of 2k integers (for some integer k), perform the following operat
 -   On the 2nd, 4th, 6th, etc. iterations replace each pair of consecutive elements with their product.
 After the algorithm has finished, there will be a single element left in the array. Return that element.
 
+**Explain**
+
+1. Group the array into subset in pairs of two
+2. Based on the times you iterate, perform these actions:
+- If the number of iterations is even, add the value to the next number.
+- If the number of iterations is odd, multiple the values together.
+
+3. Use recursion until you have reached a singular value.
+
 **Example**
 
 For inputArray = [1, 2, 3, 4, 5, 6, 7, 8], the output should be
