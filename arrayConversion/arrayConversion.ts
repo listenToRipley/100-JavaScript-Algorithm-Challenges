@@ -1,21 +1,16 @@
 export const arrayConversion = (sumArr: number[]):number => {
-  let result: number = 0;
-  let iterationCount: number = 0;
+  let isOdd: boolean = true;
 
-  let currentArray: number[][]| number[] = loopPairs(sumArr)
-
-  do { //if the result has not yet been returned, then we need to break down the array still.
-
-    if (iterationCount % 2 === 0) {
-      iterationCount++;
-      arrayConversion(AddLoop(currentArray))
-    } 
-
-    if (iterationCount % 2 !== 0) {
-      iterationCount++;
+  let currentArray: number[][]| number[] = sumArr.length > 1 ? loopPairs(sumArr) : sumArr;
+  while(currentArray.length !== 1) { //if the result has not yet been returned, then we need to break down the array still.
+    isOdd = !isOdd
+    if (isOdd) {
       arrayConversion(mutlipleLoop(currentArray));
+    } else {
+
+        arrayConversion(AddLoop(currentArray)); 
     }
-  } while (currentArray.length !== 1) // break condition
+  } 
 
   return currentArray[0];
 };
