@@ -9,6 +9,8 @@ Given array of integers, for each position i, search among the previous position
 For items = [3, 5, 2, 4, 5], the output should be
 arrayPreviousLess(items) = [-1, 3, -1, 2, 4].
 
+**Explain**
+
 **Hints**
 -   unshift()
 
