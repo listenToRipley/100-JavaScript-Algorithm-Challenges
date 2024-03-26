@@ -17,6 +17,7 @@
 - [Are Equally Strong](./areEquallyStrong/README.md)
 - [Are Similar](./areSimilar/README.md)
 - [Array Change](./arrayChange/README.md)
+- [Array Conversion](./array/Conversion.md)
 
 ## Testing
 
