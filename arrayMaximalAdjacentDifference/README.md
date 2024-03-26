@@ -13,6 +13,15 @@ arrayMaximalAdjacentDifference(inputArray) = 3.
 For inputArray = [2, 9, 1, 0], the output should be
 arrayMaximalAdjacentDifference(inputArray) = 8.
 
+**Explain**
+
+1. Loop through the array
+2. Subtract the current value from the next value, while there is a next value. 
+3. Make sure the result of the subtraction is a absolute value.
+4. Create a holder value to compare subtracted values against
+5. If the absolute value is higher than the last absolute value, update the holder value.
+6. Return the holder value
+
 **Hints**
 -   Math.abs()
 
