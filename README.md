@@ -18,6 +18,7 @@
 - [Are Similar](./areSimilar/README.md)
 - [Array Change](./arrayChange/README.md)
 - [Array Conversion](./array/Conversion.md)
+- [Array Max Consecutive Sum](./arrayMaxConsecutiveSum/README.md)
 
 ## Testing
 
