@@ -11,6 +11,13 @@ arrayPreviousLess(items) = [-1, 3, -1, 2, 4].
 
 **Explain**
 
+1. Loop backwards through the array.
+2. Compare the next value to the current value.
+3. If the current value is less than the current value, replace the current value with the value. 
+4. If there is not value replace it with a -1 
+5. If the next value is greater than the current value, replace it with a -1.
+6. Return the results of the array.
+
 **Hints**
 -   unshift()
 
