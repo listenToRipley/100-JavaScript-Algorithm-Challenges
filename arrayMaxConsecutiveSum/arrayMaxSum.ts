@@ -3,13 +3,15 @@ export const arrayMaxSum = (array: number[], num: number): number => {
 
   for (let i = 0; i < array.length-1; i++) {
     let newTotal: number = total;
-    let adding: number[] | number = array.slice(i, i+num);
-    let result: number = 0;
-    adding = adding.reduce((prevNum:number, currNum: number) => prevNum + currNum, result)
-    if (adding > total) {
-      total = adding
+    if (array[i+num]) {
+      let adding: number[] | number = array.slice(i, i+num);
+      let result: number = 0;
+      adding = adding.reduce((prevNum:number, currNum: number) => prevNum + currNum, result)
+      if (adding > total) {
+        total = adding
+      };
     };
-  }
+  };
   return total;
 };
 
