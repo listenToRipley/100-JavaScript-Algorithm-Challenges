@@ -3,8 +3,8 @@ export const arrayMaxAdjDiff = (inputArray: number[]):number => {
 
   for (let i = 0; i < inputArray.length-1; i++) {
     if (inputArray[i+1]) { //valid there is a next value
-      let adding:number = Math.abs(inputArray[i] - inputArray[i+1])
-      max = adding > max ? adding : max;
+      let abs:number = Math.abs(inputArray[i] - inputArray[i+1])
+      max = abs > max ? abs : max;
     };
   };
 
