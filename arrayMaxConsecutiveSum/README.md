@@ -16,6 +16,14 @@ All possible sums of 2 consecutive elements are:
 
    Thus, the answer is 8
 
+**Explain**
+
+1. Loop through the array
+2. Add the value of k in the array set today.
+3. Push the values added together into a different array
+4. Sorted the new values array
+5. Return the highest value
+
 **Input/Output**
 
 - **[execution time limit] 4 seconds (js)**

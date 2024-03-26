@@ -22,3 +22,14 @@
 ## Testing
 
 `npm run testFile folder/file.spec.ts` to run test.
+
+### Debugging
+
+If you have issues running your test, try some of these commands:
+
+- `npx jest --clearCache`
+- `npm cache clean --force`
+- `jest --runInBand`
+- `jest --detectOpenHandles --forceExit`
+
+You can also try deleting your lock file and reinstalling your npm.
