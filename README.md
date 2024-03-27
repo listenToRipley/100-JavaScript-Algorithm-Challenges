@@ -20,6 +20,7 @@
 - [Array Conversion](./array/Conversion.md)
 - [Array Max Consecutive Sum](./arrayMaxConsecutiveSum/README.md)
 - [Array Maximal Adjacent Difference](./arrayMaximalAdjacentDifference/)
+- [Array Previous Less](./arrayPreviousLess/)
 
 ## Testing
 
